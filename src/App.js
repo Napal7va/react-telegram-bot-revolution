@@ -4,7 +4,9 @@ function App() {
   return (
     <>
       Hello nfff
-      <Button/>
+      <Button title={'Add'} disable={false} type={'add'}/>
+      <Button title={'Remove'} disable={false} type={'remove'}/>
+      <Button title={'Checkout'} disable={false} type={'checkout'}/>
     </>
 
   );
