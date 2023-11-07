@@ -6,10 +6,10 @@ import supreme from '../images/supreme.png';
 
 export function getData(){
     return[
-        {title: "Alyx puffer", price: 12.990, image: alyxpng},
-        {title: "Disel jacket", price: 9.990, image: diselpng},
-        {title: "Stone island", price: 13.990, image: jacketpng},
-        {title: "Zip hodie", price: 11.990, image: stoneypng},
+        {title: "Alyx puffer", price: 12.990, image: alyxpng, id:1},
+        {title: "Disel jacket", price: 9.990, image: diselpng, id:2},
+        {title: "Stone island", price: 13.990, image: jacketpng, id:3},
+        {title: "Zip hodie", price: 11.990, image: stoneypng, id:1},
         {title: "Supreme x dickies", price: 12.990, image: supreme}
     ]
 }
