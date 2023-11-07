@@ -1,5 +1,8 @@
 import './App.css';
 import Button from './Components/Button/Button'
+
+const {} = require('./db/db');
+
 function App() {
   return (
     <>
