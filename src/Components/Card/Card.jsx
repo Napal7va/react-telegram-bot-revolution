@@ -30,7 +30,7 @@ function Card({wear}) {
                     <Button title={'-'} type={'remove'} onClick={handleDecrement}/>
                     ):(
                         ""
-                    )};
+                    )}
             </div>
         </div>
     )
