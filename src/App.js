@@ -1,12 +1,19 @@
 import './App.css';
 import Card from './Components/Card/Card';
 import Cart from './Components/Cart/Cart';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 const {getData} = require('./db/db');
 const wear = getData();
 
+const tele = window.Telegram.WebApp;
+
 function App() {
   const[cartItems, setCartItems] = useState([]);
+  useEffect[cartItems, setCartItems] = useState([
+    tele.ready()
+  ]);
+
+
 
   const onAdd = (wear) => {
     const exist = cartItems.find((x) => x.id === wear.id);
@@ -31,11 +38,15 @@ function App() {
         ))
     }
   }
+  const onCheckout = ()=>{
+    tele.MainButton.text = 'Pay';
+    tele.MainButton.show();
+  }
 
   return (
     <>
       <h1 className='heading'>MMT Shop</h1>
-      <Cart cartItems={cartItems} />
+      <Cart cartItems={cartItems} onCheckout={onCheckout} />
       <div className='cards__container'>
         {wear.map(wear=>{
           return <Card wear={wear} key={wear.id} onAdd={onAdd} onRemove={onRemove}/>
