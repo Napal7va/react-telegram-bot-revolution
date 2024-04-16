@@ -14,5 +14,4 @@ function Button({type, title, disable, onClick}) {
     </button>
   )
 }
-
 export default Button
